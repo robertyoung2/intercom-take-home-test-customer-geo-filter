@@ -1,7 +1,7 @@
 # Import modules and all functions from the main python script
 import unittest
 import filecmp
-from take_home_test import load_customer_data, haversine, customer_distance, output_customer_list=
+from take_home_test import load_customer_data, haversine, customer_distance, output_customer_list
 
 # Paths for opening and writing files for unit testing
 test_file_path = 'test_text_files/'
@@ -23,8 +23,7 @@ class TestLoadCustomerData(unittest.TestCase):
     def test_handles_erroneous_file_text(self):
         """
         Tests the script to ensure the output is correct, even for JSON data objects which are poorly formed (code
-        should skip these). At the end, the output
-        will only be those that are valid customer objects.
+        should skip these). At the end, the output will only be those that are valid customer objects.
         """
 
         customer_errors = test_file_path + 'customer_errors.txt'
