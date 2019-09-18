@@ -6,7 +6,7 @@ from math import sin, cos, asin, sqrt, radians
 intercom_office_lat = 53.339428
 intercom_office_lng = -6.257664
 accepted_distance = 100
-file_name = "test_text_files/customer_errors.txt"
+file_name = "customers.txt"
 output_path = "output_files/"
 
 
@@ -45,7 +45,6 @@ def haversine(intercom_lat, intercom_lng, customer_lat, customer_lng):
     :param customer_lng: Longitude of the given customer coordinate
     :return: returns the greater circle distance between two coordinates in kilometers, rounded to two decimal places
     """
-
     radius_earth_km = 6371
     lat_1_rads, lng_1_rads = radians(intercom_lat), radians(intercom_lng)
     lat_2_rads, lng_2_rads = radians(customer_lat), radians(customer_lng)

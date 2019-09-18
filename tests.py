@@ -1,7 +1,7 @@
 # Import modules and all functions from the main python script
 import unittest
 import filecmp
-from take_home_test import load_customer_data, haversine, customer_distance, output_customer_list, execute_functions
+from take_home_test import load_customer_data, haversine, customer_distance, output_customer_list=
 
 # Paths for opening and writing files for unit testing
 test_file_path = 'test_text_files/'
