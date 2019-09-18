@@ -37,7 +37,7 @@ def haversine(intercom_lat, intercom_lng, customer_lat, customer_lng):
     """
     Takes in two coordinates and calculate the greater circle distance between these two points in kilometers
     Uses the greater circle distance formula from: https://en.wikipedia.org/wiki/Great-circle_distance,
-    haversine formula. This is broken into three steps for readability, a,c and the return statement.
+    haversine formula. This is broken into three steps for readability, a,c and the answer statement.
 
     :param intercom_lat: Latitude of Intercoms Dublin Office
     :param intercom_lng: Longitude of Intercoms Dublin Office
