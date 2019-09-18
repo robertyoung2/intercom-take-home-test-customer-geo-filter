@@ -1,0 +1,6 @@
+{"latitude": "52.486555", "user_id": 12, "name": "Johnny Birmingham", "longitude": "-1.892477"}
+{"latitude": "51.531513", "user_id": 1, "name": "Eric London", "longitude": "-0.192842"}
+{"latitude": "55.851947", "user_id": 2, "name": "Gina Glasgow", "longitude": "-4.264045"}
+{"latitude": "53.321808", "user_id": 3, "name": "Rory Rathmines", "longitude": "-6.264328"}
+{"latitude": "53.356845", "user_id": 28, "name": "Lucy Lucan", "longitude": "-6.454808"}
+{"latitude": "53.378480", "user_id": 7, "name": "Holly Howth", "longitude": "-6.056727"}
