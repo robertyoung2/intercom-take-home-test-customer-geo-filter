@@ -14,8 +14,7 @@ approach. The reasons for this are as follows:
 
 * It was a simple task with respect to input/output, OOP would have added a layer of complexity not required for such 
 a task.
-* We are dealing with JSON objects, which represented customers, there was no variation on this class, such as perhaps
-'Intercom Employees'.
+* We are dealing with JSON objects, which represented customers, there was no variation on this customer class present.
 * No methods to interact with and change the provided customer data were required.
 * Procedural code is more efficient, and if written correctly, easier to maintain.
 * The code itself is static, and bar perhaps the distance range, or the intercom Dublin office geo-coordinates,
@@ -25,8 +24,8 @@ The code itself will handle the major error cases that may occur when given an i
 in the file is incorrect, a console log will be printed stating the error and the offending object, and the script will continue
 with processing any remaining valid objects in the file.
 
-Should a JSON key or value be incorrect, such as a user_id not be a number, but instead characters such as 'aaa',
-the code will again raise an error, and continue to process any valid objects.
+Should a JSON key or value be incorrect, such as a user_id is not a number, but instead characters such as 'aaa',
+the code will again raise an error, and continue to process any valid objects left in the file.
 
 Should a provided data file be empty, the user will be informed and the script will exit.
 
@@ -35,18 +34,19 @@ Should a provided data file be empty, the user will be informed and the script w
 
 In the root of the project folder there are the following files:
 
-* take_home_test.py - this is the main python script containing all the functionality to solve the given problem.
-* test.py - this is where all the unit tests for take_home_test.py are contained.
-* requirements.txt - this is the requirements file to be installed for the Python virtual environment.
-* customers.txt - this is the text file containing the customer JSON data to be processed.
+* [take_home_test.py](https://github.com/robertyoung2/take-home-test/blob/master/take_home_test.py) - this is the main python script containing all the functionality to solve the given problem.
+* [test.py](https://github.com/robertyoung2/take-home-test/blob/master/tests.py) - this is where all the unit tests for take_home_test.py are contained.
+* [requirements.txt](https://github.com/robertyoung2/take-home-test/blob/master/requirements.txt) - this is the requirements file to be installed for the Python virtual environment.
+* [customers.txt](https://github.com/robertyoung2/take-home-test/blob/master/customers.txt) - this is the text file containing the customer JSON data to be processed.
 
 ### Output Files Directory
 
-output_files - there are two files in here, one in csv format and the other in text containing JSON objects, similar 
+[output_files](https://github.com/robertyoung2/take-home-test/tree/master/output_files) - there are two files in here, one in csv format and the other in text containing JSON objects, similar 
 to the customer text file provided for this problem. These two files are generated on execution of the code.
 The files comprise the solution to the given problem. The csv is human/spreadsheet readable, giving only the customer name 
-user_id. The JSON file contains all the customer information. This are only customers within 100km of Intercoms Dublin office,
-sorted in ascending order of user id.
+and user_id. The text file contains all the customer information in JSON format. 
+Only customers within 100km of Intercoms Dublin office,
+sorted in ascending order of user id, are included in the output files.
 
 There is one other directory in the project root, test_text_files. This directory comprises of files and folders with solutions 
 and text files I have manipulated,
@@ -70,7 +70,7 @@ While no additional packages are required to run this script
 bar the core packages which come with Python, a requirements file has been provided to emulate the virtual environment 
 used during development. This is the file requirements.txt.
 
-To create a virtual environment, activate it and install the required packages run the following commands from the root of the 
+To create a virtual environment, activate it, and install the required packages run the following commands from the root of the 
 directory (where requirements.txt is).
 
 ```
